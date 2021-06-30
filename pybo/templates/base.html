@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
     <!--pybo CSS-->
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Hello Jorim!</title>
+    <title>주식투자연습용(게시판+로그인 등)</title>
 </head>
 <body>
 <!--네비게이션 bar-->
@@ -20,5 +20,8 @@
 <script src="{{ url_for('static', filename='jquery-3.6.0.min.js') }}"></script>
 <!--Bootstrap JS-->
 <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+<!--JS Start-->
+{% block script %}
+{% endblock %}
 </body>
 </html>
